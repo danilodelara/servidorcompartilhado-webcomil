@@ -1,0 +1,37 @@
+pt:
+  views:
+    index:
+      link:
+        txt_read_more: Saiba mais
+        txt_works: Acesse nossas obras
+        txt_search_locale: ENCONTRE A COMIL PERTO DE VOCÊ
+        txt_news_readmore: Ler a notícia
+      
+      section_banner:
+        txt_title_h1: Armazenagem de grãos 
+        txt_title_h2: Soluções para        
+      
+      section_segments:
+        txt_help_descrition: ENTENDA COMO PODEMOS POTENCIALIZAR SEU PROJETO AGRÍCOLA
+        txt_segment_storage: Armazenagem
+        txt_segment_cleaning: Limpeza
+        txt_segment_drying: Secagem
+        txt_segment_transport: Transporte
+      
+      section_works:
+        txt_title_h1: Conheça as obras
+        txt_title_h2: que utilizam Comil
+        txt_description: A convivência e intercâmbio com clientes de várias regiões do país e do exterior, possibilitam a adaptação de cada produto às diferentes realidades de cada segmento. Possibilitando a Comil Silos e Secadores integração no desenvolvimento de seus produtos, ofertando ao mercado alternativas eficientes para promover o aumento da produtividade agrícola.
+      
+      section_locale:
+        txt_line_1: CONTE COM MAIS DE
+        txt_line_2: 65 ANOS DE EXPERIÊNCIA
+        txt_line_3: EM POTENCIALIZAR
+        txt_line_4: SEU NEGÓCIO.
+        txt_description_line_1: ESTAMOS PRESENTES EM
+        txt_description_line_2: MAIS DE 18 PAÍSES
+        txt_description_line_3: PELO MUNDO.  
+        
+      section_news:
+        txt_title: Notícias
+

@@ -1,0 +1,125 @@
+<div class="ins_body-content">
+    <div class="ins_header_background ins_setbg_historia">
+
+        <div class="row ">
+            <div class="col s6 ins_header-section">
+                <h1>Institucional</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                &nbsp;
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 nav-breadcrumb">
+                <a href="/" class="breadcrumb grey-text text-darken-3">Página Inicial</a>
+                <a href="#nossasobras" class="breadcrumb grey-text text-darken-3">Institucional</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 page_title">
+                <h1>Nossas obras <a name="nossasobras"></a></h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12">
+                Conheça nossas obras e como a Comil auxilia cada cliente na potencialização do seu negócio.
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+  <section class="works-box">
+
+      <div class="row">
+          <div class="block-description">
+              <div class="content">
+                  <h1 class="title_bold">André Tacca - Tapurah/MT</h1>
+                  <h2 class="title_light">Unidade de armazenagem</h2>                
+                  <p>Conheça como a Comil auxilou esta unidade de armazenagem a ser mais rentável com processos e equipamentos de qualidade.</p>
+
+                  <div class="description-link ">
+                     <a class="action-link center-align modal-trigger" href="#modal1"><%= translate 'views.index.link.txt_read_more' %></a>
+                  </div>
+              </div>
+          </div>
+          <div class="block-figure work-andre-tacca">&nbsp;</div>
+      </div>
+
+  </section>
+
+
+<br>
+
+
+
+<div class="row">
+    <div class="col s12">
+        &nbsp;
+    </div>
+</div>
+
+
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <h3 class="text-black">Unidade armazenadora André Tacca - Tapurah/MT</h3>
+
+        <div class="carousel carousel-slider">
+            <a class="carousel-item"><img src="/assets/images/obras/tacca-tapurah.jpeg"></a>
+            <a class="carousel-item"><img src="/assets/images/obras/tacca-tapurah_01.jpeg"></a>
+            <a class="carousel-item"><img src="/assets/images/obras/tacca-tapurah_02.jpeg"></a>
+        </div>
+
+        <p>O cliente enfrentava problemas relacionados com entrega de produto em unidades armazenadoras da região, com grande tempo de espera de caminhões na fila de descarga, perda em rendimento operacional na colheita devido à demora de descarga dos caminhões, grande quantidade de caminhões para escoamento da produção, altos descontos de umidade e impureza devido ao alto nível pluviométrico na época de colheita de soja. </p>
+        <p>A Comil contribuiu na agilidade e alto rendimento operacional das máquinas agrícolas no momento da colheita, melhorando assim a janela de plantio da soja e consequentemente o plantio do milho safrinha nas melhores épocas de cada cultura. </p>
+        <p>Uma melhora na média de produção de até 5 sacas por hectare na cultura da soja, com a padronização feita pela unidade armazenadora, assim evitando as perdas com altos descontos por umidade e impureza.</p>
+        <p>Neste projeto, a capacidade de armazenagem planejada é de 173.000 sacas. </p>
+
+
+        <h3>Nesta obra estão presentes os produtos Comil: </h3>
+        <ul>
+            <li><b>Armazenagem:</b> Silos Planos, Silos Elevados e Tulha graneleira </li>
+            <li><b>Limpeza:</b> Máquina de Limpeza Rotativa </li>
+            <li><b>Secagem:</b> Secador de Coluna e fornalha. </li>
+            <li><b>Transporte de grãos:</b> Elevador e Redler RD </li>
+        </ul>
+
+
+        <p>&nbsp;</p>
+
+
+
+    </div>
+
+</div>
+
+
+<script>
+    $(document).ready(function() {
+
+//var instance = M.Carousel.getInstance(elem);
+        var carouselInfo =   $('.modal .carousel.carousel-slider').carousel({
+                    fullWidth: true,
+                    indicators: true,
+                    noWrap:true
+                });
+
+        $(carouselInfo).css("height", '300px');
+
+        $('.modal').modal();
+    
+
+
+    });
+</script>

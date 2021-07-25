@@ -1,0 +1,137 @@
+// Place all the styles related to the institucional controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.ins_body-content{
+    background-color: #fff !important;
+    position: relative;
+}
+
+.ins_header_background {
+    background-color: #850000 ;
+    min-height: 300px;
+    background: url(/assets/images/institucional/bg_about.jpg) no-repeat ;
+    background-size: cover;
+    background-position: 20% ;
+    position: relative;
+}
+.ins_setbg_historia{
+    background: url(/assets/images/institucional/bg_historia.jpg) no-repeat ;
+    background-position: center;
+}
+
+.ins_setbg_financiamento{
+    background: url(/assets/images/institucional/bg_financiamento.jpg) no-repeat ;
+    background-position: center;
+}
+
+.ins_header_background .ins_header-section{
+    background-color: #850000 ; 
+    position: absolute;
+    margin-left: 2%;
+    bottom: -10%;
+}
+@media (max-width: 769px){
+    .ins_header_background .ins_header-section{
+        width: 100% !important;
+    }
+}
+
+
+.ins_header_background  .row{ 
+    display: block;
+}
+
+.ins_header_background .ins_header-section h1{ 
+    color: #fff;
+    text-align: center;
+    font-size: 38px;
+    line-height: 124px;
+    padding-top: 4px;
+    margin: 2%;
+    }
+
+ .ins_page-blocks{
+    background-color: #fff ; 
+    min-height: 421px;
+    display: flex;
+    flex-flow: row;
+    flex: 1 1 auto;
+ }
+
+ .ins_page-blocks .description{
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 50%;
+    align-items: center;
+    justify-content: space-around;
+ }
+
+ .ins_page-blocks .description h2 , .ins_page-blocks .description p {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.ins_page-blocks .description p {
+    align-items: flex-start;
+}
+
+ .ins_page-blocks .type-list p{
+     margin: 0;
+ }
+
+
+
+
+
+ .ins_block-missao .ilustration{
+    background: url(/assets/images/institucional/bg_about.jpg) no-repeat ;
+    height: 420px;
+    background-size: cover;
+    background-position: -349px -16%;
+    display: flex;
+    flex-flow: column;
+    flex: 1 1 50%;
+ }
+
+
+ 
+ .ins_block-valores .description{
+    padding: 2% 5% !important;   
+ }
+
+ .ins_block-visao .ilustration{
+    background: url(/assets/images/institucional/bg_visao.jpg) no-repeat ;
+    background-position: center;
+    background-color: aqua;
+ }
+
+ .ins_block-valores .ilustration{
+    background: url(/assets/images/institucional/bg_visao_valores.jpg) no-repeat ;
+    background-position: center;
+ }
+
+ .video{
+     width: 100%;
+     margin: 2% auto;
+     min-height: 320px;
+ }
+
+
+ 
+ @media (max-width: 769px){
+    .ins_page-blocks{
+        flex-flow: column;
+    }
+    .ins_page-blocks .description{
+        flex: 1 1 330px;
+        padding: 10% !important;
+    }
+    .ins_page-blocks .ilustration{
+        flex: 1 1 330px;
+    }
+    .to-mobile{
+        flex-flow: column-reverse;
+    }
+
+ }

@@ -1,0 +1,36 @@
+en:
+  views:
+    index:
+      link:
+        txt_read_more: Read more
+        txt_works: know our works
+        txt_search_locale: FIND COMIL NEAR YOU
+        txt_news_readmore: Read the news
+      
+      section_banner:
+        txt_title_h1: Grain Storage
+        txt_title_h2: Solutions        
+      
+      section_segments:
+        txt_help_descrition: UNDERSTAND HOW WE CAN POTENTIALIZE YOUR AGRICULTURAL PROJECT
+        txt_segment_storage: storage
+        txt_segment_cleaning: grain cleaning
+        txt_segment_drying: drying
+        txt_segment_transport: conveyors
+      
+      section_works:
+        txt_title_h1: Discover the works
+        txt_title_h2: using Comil
+        txt_description: The coexistence and exchange with customers from various regions of the country and abroad, allow the adaptation of each product to the different realities of each segment. Enabling Comil Silos e Secadores integration in the development of its products, offering the market efficient alternatives to promote the increase of agricultural productivity.
+     
+      section_locale:
+        txt_line_1: COUNT ON MORE THAN
+        txt_line_2: 65 YEARS OF EXPERIENCE
+        txt_line_3: IN POTENTIALIZING
+        txt_line_4: YOUR BUSINESS.
+        txt_description_line_1: WE ARE PRESENT IN
+        txt_description_line_2: MORE THAN 18 COUNTRIES
+        txt_description_line_3: WORLDWIDE.
+        
+      section_news:
+        txt_title: News

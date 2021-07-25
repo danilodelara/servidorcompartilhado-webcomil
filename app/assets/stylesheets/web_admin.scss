@@ -1,0 +1,17 @@
+// Place all the styles related to the WebAdmin controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+//@import 'activeadmin_materialize_theme/theme';
+//@import 'activeadmin_materialize_theme/roboto';
+
+body{
+
+    background-color: #f4f4f4;    
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body.has-fixed-sidenav {
+    padding-left: 300px;
+}

@@ -1,0 +1,1052 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$comilRedDark: #850000;
+$comilRedLight: #9E1C0F;
+$comilYellow: #FFA700;
+$comilBlack: #4d4d4d;
+$comilSilverDark: #CECFC6;
+$comilSilverLight: #F2F2F2;
+
+
+
+h1{
+    color: $comilRedDark;
+}
+
+body > header  nav {
+    position: relative;
+    background-color: $comilRedDark ;
+    min-height: 120px;
+    transform: translateX(0px);
+    z-index:100;
+ }
+
+
+.text-black{
+    color: $comilBlack !important
+}
+ 
+
+ body > header  .nav-menu .base_menu > li{
+     min-width: 180px;
+     width: 33.33% ;
+     text-align: center;
+ }
+
+ body > header  .nav-menu .base_menu li a{
+     font-size:0.9em;
+     text-transform: uppercase;
+ }
+
+ 
+
+ body > header .dd-top-menu > li{
+    width: 100%;
+    min-width: 100%;    
+}
+body > header .dd-top-menu > li > a{
+    font-size: 14px;
+    color: $comilBlack;
+}
+body > header .dd-top-menu > li > a:hover{
+    text-decoration: underline;
+    background-color: #ffffff;
+}
+
+
+ body > header .menu-translate{
+    text-align: right;
+    min-width: 150px;
+ }
+
+ body > header .menu-translate .btn-translate{
+    background-color: $comilRedDark;
+    box-shadow:none;
+    width: 100px;
+ }
+
+ body > header .menu-translate .m-translate {
+     min-width: 200px;
+ }
+ body > header .menu-translate .m-translate li{
+     width: 100%;
+     text-transform: uppercase;
+ }
+ body > header .menu-translate .btn-translate svg ,
+ body > header .menu-translate .m-translate li a svg,
+ body > header  .nav-menu .talk-us a svg{
+     margin: -1% 0%;
+ }
+
+ body > header  .nav-menu .talk-us{
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+body > header  .nav-menu .talk-us a{    
+    color: $comilSilverLight;
+    height: 120px;
+    font-size: 0.9em;
+    display: flex;
+    flex-flow: row wrap;
+    order: 1;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+body > .page-footer{
+    background-color: $comilSilverDark;
+}
+
+
+body > .page-footer .footer-copyright{
+    
+    background-color: $comilRedDark;
+}
+
+body > .page-footer h3{
+    font-size: 1em;
+    font-weight: 700;
+    color: $comilBlack;
+}
+
+body > .page-footer .footer-menu a{
+    font-size: 0.85em;
+    color: $comilBlack;
+}
+body > .page-footer .footer-menu a:hover{
+    text-decoration: underline;
+}
+body > .page-footer .txt-copy{
+    font-size: 0.85em;
+    font-weight: 100;
+    color: $comilSilverLight;
+}
+
+body > .page-footer b{
+    font-size: 1.1em;
+    font-weight: 700;
+    color: $comilSilverLight;
+}
+
+body > .page-footer figure{
+    display: block;
+    margin: 2px 4px;
+    padding: 0px;
+}
+
+.img{
+    background: url(images/institucional/icons.png) no-repeat 0px 3px ;
+    display: block;
+}
+
+
+body > .page-footer figure .logo-comil{
+    background-position: -10px 3px;
+    width: 170px;
+    height: 54px;
+}
+
+body > .page-footer figure .logo-grupo{
+    background-position: -10px -64px;
+    width: 170px;
+    height: 27px;
+}
+
+body > .page-footer figure .social-youtube{
+    background-position: -19px -100px;
+    width: 26px;
+    height: 26px;
+}
+
+body > .page-footer figure .social-facebook{
+    background-position: -50px -100px;
+    width: 26px;
+    height: 26px;
+    margin: 0px 6px
+}
+
+body > .page-footer figure .social-instagram{
+    background-position: -81px -100px;
+    width: 26px;
+    height: 26px;
+}
+
+.footer-copyright .address  a{
+    color: #F2F2F2;
+    text-decoration: none;
+    font-size: 0.85em;
+    font-weight: 100;
+}
+.footer-copyright .address  a:hover{
+    color: #FFA700;
+    text-decoration: underline;
+}
+
+
+/*  BLOCO BANNER INDEX */
+
+
+body > .banner-box {
+    
+    background-color: #FFA700;
+    height: 540px;
+}
+
+
+body > .banner-box .banner-index-carousel{
+    
+    background: url(/assets/images/banner/banner001.jpg) no-repeat ;
+    background-size: cover;
+    height: 100%;
+}
+
+
+.banner-box .slide-box-background{
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+}
+
+
+
+.banner-box .slide-box-content{
+    
+    border: 0px solid #FFA700;
+    display: block;
+    padding: 8%;
+}
+
+.banner-box .slide-box-content h2{
+    font-size: 1.5em;
+    color: $comilSilverLight;
+    margin: 0px;
+}
+
+.banner-box .slide-box-content h1{
+    font-size: 3em;    
+    color: $comilSilverLight;
+    margin: 0px;
+
+}
+
+.banner-box .slide-box-content .carousel-action-link
+{   
+    display: block;
+    height: 44px;
+    width: 167px;
+    border-radius: 36px;
+    text-align: center;
+    padding: 9px;
+    color: #fff;
+    font-size: 1.1em;
+    background: rgba(255,167,0,1);
+    background: linear-gradient(45deg, rgba(151,9,3,1) 0%, rgba(199,82,2,1) 67%, rgba(255,167,0,1) 100%);
+}
+
+
+/*  BLOCO MODULOS */
+
+.modules-box{
+    position: relative;
+    display: block;
+    min-height: 150px;
+}
+
+.modules-box .module-header{
+    background-color: rgba(0,0,0,0.0);
+    min-height: 150px;
+    position: absolute;
+    top: -250px;
+    left: 0px;
+    right:0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.modules-box .bar-left{
+    margin-top: 8px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background: rgba(255,167,0,1);
+    background: linear-gradient(45deg, rgba(151,9,3,1) 0%, rgba(199,82,2,1) 67%, rgba(255,167,0,1) 100%);
+}
+
+
+.modules-box .bar-right{
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-top: 8px;
+    border-radius: 4px;
+    background: rgba(255,167,0,1);
+    background: linear-gradient(45deg, rgba(255,167,0,1)  0%, rgba(199,82,2,1) 67%, rgba(151,9,3,1) 100%);
+}
+
+.modules-box .module-header .container{
+    margin: 2% auto;
+    display: flex;
+    flex: 1 1 auto;
+    flex-shrink: 1;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    max-width: 992px;
+}
+
+.modules-box .module-header .despription{
+    margin: auto;
+}
+
+.modules-box .content-text {
+    font-size: 14px;
+    color: $comilSilverLight;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.modules-box .bar-down{
+    display: block;
+    background-position: -230px -12px;
+    width: 87px;
+    height: 28px;
+    margin: 10px auto 8px auto;    
+}
+
+.modules-box .module-header .container{
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column   
+}
+
+.modules-box .module-header .container .row-cards{
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row;
+    width: 100%;
+}
+
+.modules-box .block-cards{
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    min-height: 210px;
+    padding: 1%;
+}
+
+.modules-box .card{
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column;
+    min-height: 210px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.modules-box  .card.small{
+    min-height: 210px;
+    height: 210px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.modules-box  .card.small:hover{
+    cursor: pointer;
+}
+
+.modules-box .card .card-image{
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column;
+    min-height: 100%;
+    bottom: 0px;
+    filter: grayscale(100%);    
+    border-radius: 4px;
+}
+
+
+
+
+
+
+.modules-box .card .modulo-secagem img,
+.modules-box .card .modulo-limpeza img,
+.modules-box .card .modulo-transporte img,
+.modules-box .card .modulo-armazenagem img{
+    display: none;
+}
+
+
+.modules-box .card .modulo-secagem{
+    background: url(/assets/images/institucional/mdl_secagem.png) no-repeat center center transparent;
+}
+.modules-box .card .modulo-limpeza{
+    background: url(/assets/images/institucional/mdl_limpeza.png) no-repeat center center transparent;
+}
+.modules-box .card .modulo-transporte{
+    background: url(/assets/images/institucional/transporte.png) no-repeat center center transparent;
+}
+.modules-box .card .modulo-armazenagem{
+    background: url(/assets/images/institucional/mdl_armazenagem.png) no-repeat center center transparent;
+}
+
+
+.modules-box  .card .card-image .card-title{
+    font-size: 1.2em;
+    color: $comilSilverLight;
+    font-weight: 700;
+    right: 0px;
+    padding-bottom: 84px;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 2px rgba(0,0,0,1);
+}   
+
+.modules-box  .card  .card-action{
+    font-size: 1.0em;
+    color: $comilSilverLight;
+    display: block;
+    transition: ease-in 5s linear 5s ;
+    background-color: rgba(0,0,0,0);
+}
+
+.modules-box  .card:hover .card-action{
+    display: block;
+    transition: ease-out 5s linear 5s ;
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+}
+
+.modules-box  .card .card-action a{
+    display: none;
+    position: relative;
+    width: 100%;
+}
+
+.modules-box  .card:hover .card-action a{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+
+.modules-box .card:hover .card-image{
+    filter: grayscale(0%);    
+}
+
+/*  BLOCO NOSSAS OBRAS */
+
+.works-box{
+    position: relative;
+    min-height: 450px;
+    background-color: $comilRedDark;
+    padding: 0px;
+    margin: 0%;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column;
+}
+
+.works-box .row {
+    padding: 0px;
+    margin: 0%;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    display: flex;
+    width: 100%;
+}
+
+.works-box 
+{
+    background-color: #850000;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row;
+
+    .block-description{
+        display: flex;
+        flex: 1 1 50%;
+        flex-shrink: 1;
+        justify-content: space-around;
+        flex-flow: row wrap;
+
+        .content{
+            display: flex;
+            flex-flow: column;
+            flex: 1 1 auto;
+            justify-content: center;
+            max-width: 80%;
+
+            h1{
+                font-size: 1.9em;
+                color: $comilSilverLight;            
+            }
+
+            h2{
+                font-size: 1.2em;
+                color: $comilSilverLight;           
+            }
+            p{
+                font-size: 1.0em;
+                color: $comilSilverLight;
+                font-weight: 100;
+            }
+
+            .description-link { 
+                a {
+                    display: block;
+                    width: 200px;
+                    height: 48px;
+                    border-radius: 36px;
+                    border: rgba(255,167,0,1) 2px solid;
+                    font-size: 1.0em;
+                    color: $comilSilverLight;
+                    font-weight: 100;
+                    padding: 10px;
+                    text-transform: uppercase;
+                }
+            }
+
+        }
+    }
+
+    .block-figure{
+        background: url(/assets/images/obras/Florai_PR.png) no-repeat;
+        background-size: cover;
+        height: 450px;
+        margin: 0px;
+        display: flex;
+        flex: 1 1 50%;
+        justify-content: space-around;
+        flex-shrink: 1;
+    }
+    .work-andre-tacca{
+        background: url(/assets/images/obras/tacca-tapurah.jpeg) no-repeat;
+        background-size: cover;
+    }
+}
+
+
+
+/*  BLOCO NOSSAS OBRAS */
+
+.location-box{
+    position: relative;
+    min-height: 450px;
+    padding: 0px;
+    margin: 0%;
+    background-color: $comilBlack;
+    background: url(/assets/images/institucional/location.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex: 1 1 auto;
+    
+}
+
+.location-box .row{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+}
+
+.location-box .block-description{
+    display: flex;
+    flex: 1 1 300px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.location-box h1{   
+    padding-top: 8%;
+    font-size: 1.9em;
+    text-transform: uppercase;
+    line-height: 1.4em;
+    color: $comilSilverLight;
+}
+
+.location-box h1 span{display: block;}
+
+
+.location-box .description-link a {
+    display: block;
+    width: 300px;
+    height: 48px;
+    border-radius: 36px;
+    border: rgba(255,167,0,1) 2px solid;
+    font-size: 1.0em;
+    color: $comilSilverLight;
+    font-weight: 100;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.location-box .description-link a:hover,
+.works-box .description-link a:hover{
+    text-decoration: underline;
+}
+
+
+
+/*  BLOCO NOTÍCIAS */
+
+.news-box{
+    display: flex;
+    flex: 1 1 auto;
+    position: relative;
+    min-height: 600px;
+    padding: 4% 2%;
+    margin: 0%;
+    background-color: $comilSilverLight
+    
+}
+
+.news-box .news-title{
+    color: $comilBlack;
+    font-size: 36px;
+}
+
+.news-box .block-description{
+    display: flex;
+    flex: 1 1 250px;
+    flex-flow: column;
+    padding: 1%;
+}
+
+.news-box .block-description figure{
+    width: 100%;
+    padding: 0%;
+    margin: 0;
+}
+
+.news-box .block-description .news-time{
+
+    font-size: 1.0em;
+    font-style: italic;
+
+}
+
+.news-box .block-description h3{
+    font-size: 1.2em;
+    line-height: 1.2em;
+    display: block;
+    height: 72px;
+    overflow: hidden;
+}
+
+.news-box .block-description p{
+    font-weight: 100;
+}
+
+.news-box .block-description .see-more{
+    font-size: 1.0em;
+}
+.news-box .block-description .see-more:hover{
+    text-decoration: underline;
+}
+.news-box .block-description .see-more svg{
+    margin: -4px 2px;
+}
+
+
+
+.form-newsletter{
+    background-color: $comilRedDark;
+    color: $comilSilverLight;
+    min-height: 100px;
+    padding: 2% 0% 0% 0%;
+}
+
+
+
+.form-newsletter form{ 
+    display: flex;
+    flex: 1 1 100px;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10%;
+}
+
+.form-newsletter .valign-wrapper{
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    flex-shrink: 1;
+    padding: 0 2%;
+}
+
+
+
+.form-newsletter .btn-large,
+form .comil-form-button{
+    background-color: $comilRedDark;
+    color: $comilSilverLight;
+    font-weight: 700;
+    border: $comilSilverLight 2px solid;
+    border-radius: 36px;
+    box-shadow: none;
+}
+
+.form-newsletter .btn-large:hover,
+form .comil-form-button:hover{
+    background-color: $comilRedDark;
+    color: $comilYellow;
+    font-weight: 700;
+    border: $comilYellow 2px solid;
+}
+
+
+
+
+.footer-form_contact{
+    background-color: $comilRedLight;
+    color: $comilSilverLight;    
+    background-image: url(/assets/images/institucional/form-contact-paralax.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4% 8%;
+    background-position: center;
+}
+
+.footer-form_contact .box-form {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 12px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.50);
+    padding: 5% 5% 5% 5%;
+    margin: 6% auto 8% auto;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row wrap;
+}
+
+.footer-form_contact .box-form .materialize-textarea{
+    color: $comilSilverLight;
+}
+
+.footer-form_contact .box-form .column{
+    display: flex;
+    flex: 1 1 300px;
+    flex-basis: 0;
+    align-items: center;
+}
+
+
+.footer-form_contact .box-form .comil-form-button{
+    background-color: transparent;    
+    width: 50%;
+    margin: 2% auto;
+}
+
+
+.block-proposta-modal{
+    background: rgba(133,0,0,1);
+    background: linear-gradient(216deg, rgba(255,167,0,1) 1%, rgba(158,28,15,1) 25%, rgba(133,0,0,1) 50%);
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    display: none;    
+    position: relative;
+    z-index: 999999;
+}
+
+.modal-content h4{
+    color: #fff !important;    
+}
+
+.modal-content h4 .modal-close .material-icons{
+    color: #F2F2F2;
+}
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.display-flex{ 
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.ddProductsBaseContainer{ 
+    position: relative ; 
+    z-index: 999999;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.ddProductsContainer {
+    position: relative;
+    width: 100%;
+    min-height: 640px;
+    padding-bottom: 200px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 19px rgba(0, 0, 0, 0.5);
+    display: none;
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+    justify-content: flex-start;
+}
+
+.ddProductsContainer .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 0;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+
+.ddProductsContainer nav{
+    background-color: #f2f2f2;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    max-height: 64px;
+}
+
+.ddProductsContainer nav a {
+    color: #4d4d4d;
+    font-size: 1em;
+    line-height: normal;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.ddProductsContainer nav a.active{
+    font-weight: 700;
+    color: #850000;
+}
+
+.ddProductsContainer nav a:hover{
+    text-decoration: underline;
+} 
+
+.ddProductsContainer > .ddProducts_container{
+    background-color: #ffffff;
+}
+
+.ddProductsContainer  .ddProducts_display{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+#ddProductsMenu-filter{
+    display: flex;
+    flex: 1 100%;
+    align-items: center;
+}
+
+.ddProductsContainer  .ddProducts_display .product-card{
+    position: relative;
+    background-color: #ffffff;
+    min-height: 200px;
+    z-index: 1;
+    transition: all 0.3s linear;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    flex: 1 1 300px;
+    align-items: center;
+}
+
+.ddProductsContainer  .ddProducts_display .product-card:hover{
+    position: relative;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) ;
+    top:-6px;
+    left: 6px;
+    z-index: 2;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.ddProductsContainer  .ddProducts_display .product-card figure{
+    margin: 2%;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+
+.ddProductsContainer  .ddProducts_display .product-card figure img{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    height: auto;
+    width: fit-content;
+}
+
+.ddProductsContainer  .ddProducts_display .product-card .txt-caption{
+    font-weight: 500;
+    color: #4d4d4d;
+    text-align: center;
+    transition: all 0.5s linear;
+    text-transform: capitalize;
+}
+
+.ddProductsContainer  .ddProducts_display .product-card:hover .txt-caption{
+    font-weight: 900;
+    text-decoration: underline;
+    transition: all 0.5s linear;    
+}
+
+.ddProductsContainer .modal-close{
+    display: block;
+    transition: all 0.5s linear;
+    border-radius: 6px;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    padding: 0;
+    margin: 14px;
+    border: 1px #9E1C0F solid;
+    background-color: #9E1C0F;
+    color: #fff;
+}
+
+
+.ddProductsContainer .modal-close:hover{text-decoration: none; color:#FFA700;}
+
+.ddProductsContainer .modal-close i{
+    line-height: 36px;
+}
+
+
+#ddProductsMenu-filter .s2 {
+    padding: 0;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;  
+}
+
+
+
+
+@media (max-width: 720px){
+
+    .nav-menu .menu-header-container{
+        padding-left: 8%;
+    }
+
+    .ddProductsContainer nav a{
+        font-size: 65%;
+        text-transform: uppercase;
+    }
+
+
+    .modules-box .card.small {
+        min-height: 210px;
+        height: 210px;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex: 1 1 auto;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+
+    .modules-box .card .card-image{
+        display: flex;
+        flex-flow: row;
+        flex: 1 1 auto;
+    }
+    .modules-box .card .card-image .card-title{
+        
+        color: #F2F2F2;
+        right: 0px;
+        padding-bottom: 84px;
+        text-transform: uppercase;
+        text-shadow: 0px 1px 2px black;
+        display: flex;
+        flex: 1 1 auto;
+        left: 0px;
+        text-align: center;
+        align-items: center;
+        justify-content: space-around;
+    
+        font-size: 75%;
+        color: #F2F2F2;
+        font-weight: 500;
+    }
+    .works-box{
+        padding-bottom: 10%;
+    }
+
+    .works-box .row{
+        flex-flow: column-reverse;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .works-box .block-description{
+        flex: 1 1 300px;
+        min-height: 450px;
+        align-items: center;
+    }
+    .works-box .block-figure{
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .location-box{
+        padding-bottom: 10%;
+    }
+
+    .location-box .row{
+        flex-flow: column-reverse;
+    }
+
+    .form-newsletter form{
+        display: flex;
+        flex: 1 1 300px;
+        flex-flow: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 6% 0%;
+    }
+
+    .form-newsletter .valign-wrapper {
+        display: flex;
+        align-items: center;
+        flex: 1 1 auto;
+        justify-content: space-around;
+        flex-shrink: 1;
+        padding: 0 2%;
+        max-height: 44px;
+        width: 77%;
+    }
+
+    .footer-form_contact{
+        padding: 4% 4%; 
+    }
+    .footer-form_contact .box-form{
+        flex-flow: column;
+        padding: 6%;
+    }
+     
+}
+

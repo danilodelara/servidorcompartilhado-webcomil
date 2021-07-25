@@ -1,0 +1,1127 @@
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.3.0/mapbox-gl.js"></script>
+
+
+<div class="ins_body-content">
+    <div class="ins_header_background ins_setbg_financiamento">
+
+        <div class="row ">
+            <div class="col s6 ins_header-section">
+                <h1>Serviços ao Cliente</h1>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                &nbsp;
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 nav-breadcrumb">
+                <a href="/" class="breadcrumb grey-text text-darken-3">Página Inicial</a>
+                <a href="#areadeatuacao" class="breadcrumb grey-text text-darken-3">Serviços ao Cliente</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 page_title">
+                <h1>Área de atuação <a name="areadeatuacao"></a></h1>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="row">
+        <div id='map' class="col s12" ></div>
+    </div>
+    
+</div>
+
+
+	<script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWt0Z3JwbWFzY2FyZWxsbyIsImEiOiJja29lcG1iM20wOWZ4MnZvZDBicnhmaGJqIn0.AzVNaakLntc6n2QdTkEu7A';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mktgrpmascarello/ckplyaa3n2wgj17p88tc1strs',
+            center: [-53.4560544, -24.9554996],
+            zoom: 1.15
+        });
+
+        map.on('load', function () {
+            map.addSource('places', {
+                'type': 'geojson',
+                'data': {
+                    'type': 'FeatureCollection',
+                    'features': [
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'ROGERIO SPECHT',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (45) 2101-5000",
+                                "contact_email": 'rogerio@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-53.5245426, -25.0026008]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'NESTOR SIMONI',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (45) 9 9101 4436",
+                                "contact_email": 'nestor@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-53.5245426, -25.0026091]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'CELSO SCHONWALD',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (45) 9 9978 0474",
+                                "contact_email": 'comercial.celso@comil.com.br',
+                                'description': 'TOLEDO - PR',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-53.7402476, -24.7222438]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'CARLOS VINICIOS DE MORAES',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (43) 9 9153 2395",
+                                "contact_email": 'comercial.carlos@comil.com.br',
+                                'description': 'MARINGÁ - PR',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-51.9382078,-23.425269]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'JUAREZ F. MOREIRA',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (54) 9 9605 2315",
+                                "contact_email": 'juarez@comil.com.br',
+                                'description': 'LAGOA VERMELHA - RS e SC',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-51.527499, -28.2087034]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'ANTONIO CITOLIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (55) 9 9682 3843",
+                                "contact_email": 'comercial.antonio@comil.com.br',
+                                'description': 'SANTA MARIA - RS',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-53.8069214,-29.6860512]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'LINDOMAR DA ROSA',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (55) 9 9605 6535",
+                                "contact_email": 'lindomar.rosa@comil.com.br',
+                                'description': 'PANAMBI - RS',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-53.501822,-28.2898542]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'RUBENS GUILHERME LEITZKE',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (62) 9 9969 6192",
+                                "contact_email": 'rubens.guilherme@comil.com.br',
+                                'description': 'APARECIDA DE GOIÂNIA - GO',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-49.2452546,-16.8226769]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'ALDERI ANTONIO MORETO',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (62) 9 9969 5848",
+                                "contact_email": 'moreto@comil.com.br',
+                                'description': 'ANÁPOLIS - GO',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-48.9525756,-16.3332828]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'ALEXANDRE KIELING',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (65) 9 9923 2813",
+                                "contact_email": 'alexandre.kieling@comil.com.br',
+                                'description': 'LUCAS DO RIO VERDE - MT',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-55.9196711,-13.0664609]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'ALEXANDRE REZENDE',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (34) 9 9923 1942",
+                                "contact_email": 'comercial.alexandre@comil.com.br',
+                                'description': 'FRUTAL - MG',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-48.9280076,-20.0220064]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'ÁLVARO TAGLIARI',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (77) 9 8145 8459",
+                                "contact_email": 'comercial.alvaro@comil.com.br',
+                                'description': 'LUIS EDUARDO MAGALHÃES - BA',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-45.7834163,-12.0869117]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'LEONARDO BECKER',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (66) 9 9217 0369",
+                                "contact_email": 'leonardo.becker@comil.com.br',
+                                'description': 'TANGARÁ DA SERRA - MT e RO',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-57.4907268,-14.6213903]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'LEONARDO BECKER',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (66) 9 9217 0369",
+                                "contact_email": 'leonardo.becker@comil.com.br',
+                                'description': 'TANGARÁ DA SERRA - MT e RO',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-61.9797944,-10.8797363]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'LUCAS KUHN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (34) 9 8418 7224",
+                                "contact_email": 'lucas.kuhn@comil.com.br',
+                                'description': 'UBERLÂNDIA - MG',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-48.2767837,-18.9188041]	
+                            }
+                        }
+                        ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'MARCOS PINZ',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (66) 9 9214 8584",
+                                "contact_email": 'marcos.pinz@comil.com.br',
+                                'description': 'PRIMAVERA DO LESTE - MT',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-54.2993946,-15.5614127]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "Comil Silos e Secadores Ltda",
+                                "contact": 'ROBISON XAVIER BURAKOSKI',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 <br> CEP:85.804-605 Cascavel PR Brasil",
+                                "contact_phone": "+55 (67) 9 9106 8972",
+                                "contact_email": 'comercial.robison@comil.com.br',
+                                'description': 'DOURADOS - MS',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-54.812208,-22.2206145]	
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "HLE SILOS",
+                                "contact": 'PEDRO ROMERO / RODRIGO TEIXEIRA',
+                                "adress": "Rua Riccieri Meneghetti, nº 230 – Jardim Aeroporto – Assis/SP <br> CEP 19.813-176 ",
+                                "contact_phone": "+55 (67) 9 9106 8972",
+                                "contact_email": 'pedro.romero@hlesilos.com.br / rodrigo@hlesilos.com.br',
+                                'description': 'Estado de SP, PR e MS',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-50.420623,-22.6620892]	
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "INOVAR",
+                                "contact": 'JEFERSON DIEHL',
+                                "adress": "Rua Joca Bezerra, nº 02 – Quadra 303, lote 09 - Balsas/MA <br> CEP 65800-000",
+                                "contact_phone": "+55 (99) 9 8417 7910",
+                                "contact_email": 'jeferson.inovar@hotmail.com',
+                                'description': 'MA/TO/PI e PA',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-46.037163,-7.53214]	//MA
+                            }
+                        },
+                        
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "INOVAR",
+                                "contact": 'JEFERSON DIEHL',
+                                "adress": "Rua Joca Bezerra, nº 02 – Quadra 303, lote 09 - Balsas/MA <br> CEP 65800-000",
+                                "contact_phone": "+55 (99) 9 8417 7910",
+                                "contact_email": 'jeferson.inovar@hotmail.com',
+                                'description': 'MA/TO/PI e PA',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-43.042953, -7.789429]	//PI
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "INOVAR",
+                                "contact": 'JEFERSON DIEHL',
+                                "adress": "Rua Joca Bezerra, nº 02 – Quadra 303, lote 09 - Balsas/MA <br> CEP 65800-000",
+                                "contact_phone": "+55 (99) 9 8417 7910",
+                                "contact_email": 'jeferson.inovar@hotmail.com',
+                                'description': 'MA/TO/PI e PA',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-48.4172743,-10.2598833]	//TO
+                            }
+                        },
+                        
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "INOVAR",
+                                "contact": 'JEFERSON DIEHL',
+                                "adress": "Rua Joca Bezerra, nº 02 – Quadra 303, lote 09 - Balsas/MA <br> CEP 65800-000",
+                                "contact_phone": "+55 (99) 9 8417 7910",
+                                "contact_email": 'jeferson.inovar@hotmail.com',
+                                'description': 'MA/TO/PI e PA',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-48.5204215,-1.3411793]	//PA
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "MONTEC",
+                                "contact": 'CASSIANO MEGIER DA SILVA',
+                                "adress": "Rua Daniel Moreira, nº 284, São Francisco - Irati-PR <br> CEP 84507-090",
+                                "contact_phone": "+55 (42) 9 9114 3970",
+                                "contact_email": 'cassiano@montec1.com.br',
+                                'description': 'PARANÁ',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-50.649287,-25.469663]	
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "PRIME ENGENHARIA",
+                                "contact": 'MARCO ANTONIO',
+                                "adress": "Rua João e Maria, S/N, Casa 0, Bairro Jardim do Éden 2 -  Confresa-MT <br> CEP 78652‑000",
+                                "contact_phone": "+55 (67) 9 9917 7359",
+                                "contact_email": 'prime.eng.dds@gmail.com',
+                                'description': 'MATO GROSSO',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-51.569873,-10.643695]	
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": " ",
+                                "contact": 'RAFAEL FOGAÇA',
+                                "adress": "Rua Adão da Silva Santos, n° 355 - Canoas/RS <br> CEP 92.425-599",
+                                "contact_phone": "+55 (51) 9 9905 1977",
+                                "contact_email": 'comilfogaca@gmail.com',
+                                'description': 'RIO GRANDE DO SUL',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-51.1799525,-29.9216045]	
+                            }
+                        }   
+                        ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "KAMIL SILOS",
+                                "contact": 'PAULO MEIRA / SERGIO CECHIN',
+                                "adress": "Ruta VI - Tavapy Alto Paraná - Paraguay",
+                                "contact_phone": "+595 0983 404 688 / +55 45 9997-7739",
+                                "contact_email": 'paulo@kamilsilos.com',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-54.833333,-25.5]	
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "RIEGO & SILOS",
+                                "contact": 'DANILO PERRET',
+                                "adress": "Mitre 150, X5940 - Las Varillas - Córdoba - Argentina",
+                                "contact_phone": "+54 9 3537 59-8997",
+                                "contact_email": 'danilo@riegosysilos.com.ar',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-64.183319,-31.4173391]	
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "DOMINGO BASSO",
+                                "contact": 'FEDERICO DOMINGO BASSO CUROTTO',
+                                "adress": "Camino Casavalle 4433, 12400 Montevideo, Departamento de Montevideo, Uruguai",
+                                "contact_phone": "+5982 354 9814  / +5982 357 5281",
+                                "contact_email": 'asilor@domingobasso.com',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-56.1935122,-34.8284616]
+                            }
+                        }  ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "ZÚÑIGA - INGENIERÍA Y FABRICACIÓN",
+                                "contact": 'JAIME ZUÑIGA CONTRERAS',
+                                "adress": "San Expedito nº 904 , Parque Industrial Jardines del Sur, San Bernardo - Chile",
+                                "contact_phone": "+5628414251  / +5628416257",
+                                "contact_email": 'jaime@zuniga-ltda.cl',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-70.720268,-33.563070]	
+                            }
+                        }     ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "GRUPO VENETA",
+                                "contact": 'PATRICIA VILLALOBOS R.',
+                                "adress": "Equipetrol Norte, Calle Dr. Adolfo Flores - Edif. Omnia Dei Piso 3  -  Santa Cruz de la Sierra, Bolivia",
+                                "contact_phone": "+591 3-3413241 / 3413240",
+                                "contact_email": 'operaciones@grupoveneta.com',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-63.1820853, -17.7834936]	
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CASA DE COMÉRCIO POVEDA C. LTDA",
+                                "contact": 'FRANCISCO CAMPOS POVEDA',
+                                "adress": "Lotización Inmaconsa, KM 10.5 vía a Daule, calle Los Helechos, Solar 38, MZ.14 - Guayaquil, Ecuador",
+                                "contact_phone": "+591 3-3413241 / 3413240",
+                                "contact_email": 'ccpoveda@gu.pro.ec',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-79.8868702,-2.1900703]	
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [31.1884234,30.0596185]	// Egito
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [13.1708262,32.8829717]	// Libia
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-82.4036375,23.0734587]	// Cuba
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-74.2478915,4.6486259]	// Colombia
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-84.1001966,9.9297967]	// Costa Rica
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-90.0516008,13.7464451]	// El Salvador 
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [30.2525025,50.4021367]	// Ucrania
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-99.4238176, 19.3911668]	// Mexico
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-86.3285019,12.0978181]	// Nicaragua
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-79.5932267,9.0817276]	// Panama
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-70.0169211,18.4801923]	// Republica Dominicana
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-72.3545012,18.5791869]	// Haiti
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-61.4700841,10.288336]	// Trinidad e tobago
+                            }
+                        },
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-59.6753447,13.1884729]	//Barbados
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-87.2750139,14.0840719]	//Honduras
+                            }
+                        }  ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-90.5626017,14.6263757]	//Guatemala
+                            }
+                        }  ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-58.1865532,6.7877123]	//Guiana 
+                            }
+                        }  ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-58.5813947,2.6472489]	//Guiana Inglesa
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-55.181898,5.835638]	//Suriname
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [10.0732369,36.7949999]	//Tunisia
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [3.0459136,36.7306294]	//Algeria
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "CPB TRADER INC.",
+                                "contact": 'CLAUDIO BALBONTIN',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": "+55 48 9 9110-1501",
+                                "contact_email": 'claudio.balbontin@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-7.3871311,32.3835954]	//Marrocos
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "",
+                                "contact": 'ARMANDO FACCIOLI',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": " +55 51 3335-2636 / +55 51 9 9954-5550",
+                                "contact_email": 'armando@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [13.2140633,-8.8533562]	//Angola
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "",
+                                "contact": 'ARMANDO FACCIOLI',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": " +55 51 3335-2636 / +55 51 9 9954-5550",
+                                "contact_email": 'armando@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-68.1941186,-16.5205361]	//Bolivia
+                            }
+                        }  ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "",
+                                "contact": 'ARMANDO FACCIOLI',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": " +55 51 3335-2636 / +55 51 9 9954-5550",
+                                "contact_email": 'armando@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-70.5448166,-23.6279923]	//Chile
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "",
+                                "contact": 'ARMANDO FACCIOLI',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": " +55 51 3335-2636 / +55 51 9 9954-5550",
+                                "contact_email": 'armando@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-77.2679845,-12.025827]	//Peru
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "",
+                                "contact": 'ARMANDO FACCIOLI',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": " +55 51 3335-2636 / +55 51 9 9954-5550",
+                                "contact_email": 'armando@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-67.0304553,10.4686988]	//Venezuela
+                            }
+                        } ,
+                        
+                        {
+                            'type': 'Feature',
+                            'properties': {
+                                "company": "",
+                                "contact": 'ARMANDO FACCIOLI',
+                                "adress": "Av. Aracy Tanaka Biazetto,16550 Cascavel PR Brasil <br> CEP 85.804-605",
+                                "contact_phone": " +55 51 3335-2636 / +55 51 9 9954-5550",
+                                "contact_email": 'armando@comil.com.br',
+                                'description': '',
+                                'icon': 'comil'
+                            },
+                            'geometry': {
+                                'type': 'Point',
+                                'coordinates': [-78.7107455,-0.1859053]	//Equador
+                            }
+                        } 
+
+
+
+                    ]
+                }
+            });
+
+            map.addLayer({
+                'id': 'places',
+                'type': 'symbol',
+                'source': 'places',
+                'layout': {
+                    'icon-image': '{icon}',
+                    'icon-allow-overlap': true
+                }
+            });
+
+
+            map.on('click', 'places', function (e) {
+                var coordinates = e.features[0].geometry.coordinates.slice();
+                var description = e.features[0].properties.description;
+                var company = e.features[0].properties.company;
+                var contact = e.features[0].properties.contact;
+                var adress = e.features[0].properties.adress;
+                var contact_phone = e.features[0].properties.contact_phone;
+                var contact_email = e.features[0].properties.contact_email;
+
+                var _htmlContext = '';
+                _htmlContext += "<h3 class='map-popUp-header'>" + company + "</h3>";
+                _htmlContext += "<div class='map-popUp-content'>";
+                _htmlContext += "  <div class='map-person'>" + contact + "</div>";
+                _htmlContext += "  <div class='map-adress'>" + adress + "</div>";
+                _htmlContext += "  <div class='map-tell'><b>Telefone:</b> <a href='tell:" + contact_phone + "' target='_blank' title='Iniciar conversa via telefone'>" + contact_phone + "</a></div>";
+                _htmlContext += "  <div class='map-email'><b>E-mail:</b> <a href='mailto:" + contact_email + "' target='_blank' title='Iniciar conversa via email'>" + contact_email + "</a></div>";
+                _htmlContext += "  <div class='map-description'>" + description + "</div>";
+                _htmlContext += "</div>";
+
+
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+
+                new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(_htmlContext)
+                    .addTo(map);
+            });
+
+
+            map.on('mouseenter', 'places', function () {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+
+
+            map.on('mouseleave', 'places', function () {
+                map.getCanvas().style.cursor = '';
+            });
+        });
+    </script>

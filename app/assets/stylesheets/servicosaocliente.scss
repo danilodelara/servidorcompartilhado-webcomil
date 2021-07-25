@@ -1,0 +1,186 @@
+// Place all the styles related to the servicosaocliente controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.ins_header_background .row{ 
+    display: block;
+}
+
+
+#map {
+            position: relative;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            min-width: 300px;
+            min-height: 640px;
+            font-size: 16px;
+        }
+
+        .mapboxgl-popup {
+            max-width: 450px !important;
+            font: 12px/20px jaf-domus, sans-serif, tahoma;
+            font-weight: 300;
+            min-width: 300px !important;
+            
+        }
+
+        .map-popUp-content {
+            padding: 4px;
+            font-size: 14px;
+        }
+
+        .map-popUp-header {
+            text-align: center;
+            color: #861a22;
+            border-bottom: 1px #cccccc solid;
+            padding: 4%;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .map-person,
+        .map-adress,
+        .map-tell,
+        .map-email,
+        .map-description {
+            text-align: center;
+            color: #4d4d4d
+        }
+
+        .map-person {
+            font-weight: bold;
+            text-align: center;
+            color: black;
+        }
+
+        .map-adress {
+            font-style: italic;
+            margin: 2% auto;
+            padding: 2%;
+        }
+
+        .map-tell a,
+        .map-email a {
+            text-align: center;
+            border: 1px #ffa700 solid;
+            padding: 2%;
+            margin: 2% 1% 6% 1%;
+            display: block;
+            border-radius: 22px;
+            text-decoration: none;
+            color: #861a22;
+        }
+
+        .map-tell a:hover,
+        .map-email a:hover {
+            text-decoration: underline;
+            background-color: #ffa700;
+            color: #861a22;
+        }
+
+        .map-email b,
+        .map-tell b {
+            font-weight: 500;
+        }
+
+        .map-description {
+            padding: 2%;
+        }
+
+
+        .display-contact{
+            text-align: center;
+            display: flex;
+            flex: 1 1 100px;
+            justify-content: space-around;
+            flex-flow: row;
+        }
+
+        .display-contact .block-contact{
+            display: flex;
+            flex: 1 1 200px;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            width: 100%;
+            padding: 1%;
+        }
+
+        .display-contact .phones-list .value {
+            flex-flow: column !important;
+        }
+
+
+        .display-contact .block-contact .label{
+            font-weight: 300;
+            font-size: 14px;
+            color: #858585;
+            padding: 2%;
+            text-transform: uppercase;
+            display: flex;
+            flex: 1 1 auto;
+            flex-flow: row;
+            align-items: center;
+            width: 100%;
+        }
+
+        .display-contact .block-contact .value {
+            display: flex;
+            flex-flow: row;
+            flex: 1 1 auto;
+            width: 100%;
+            justify-content: space-around;
+            align-items: center;
+            min-height: 56px;
+        }
+
+        .display-contact .block-contact .value a{
+            display: flex;
+            color:#861a22;
+            font-weight: 700;
+            font-size: 18px;  
+            border: 1px #ffa700 solid;
+            border-radius: 64px;
+            padding: 4%;      
+            text-decoration: none;    
+            margin: 2% auto;
+            flex: 1 1 auto;
+            justify-content: space-around;
+            align-items: center;
+            min-width: 100%;
+            max-height: 56px;
+        }
+        
+        .display-contact .block-contact .value a:hover{
+            text-decoration: underline;
+            color:#861a22;
+            background-color:  #ffa700;
+        }
+
+        .display-contact .block-contact  .value .whatsapp{
+            
+            border: 1px #02d568 solid;
+            color:#02d568;
+        }
+        .display-contact .block-contact  .value .whatsapp:hover{
+            background-color: #02d568;
+            color:#ffffff
+        }
+.mapboxgl-ctrl-attrib-inner{
+    font-size: 10px;
+}
+
+@media (max-width: 769px){
+
+    .display-contact,
+    .display-contact .block-contact .value{
+        flex-flow: column;
+    }
+
+  
+    .ins_header_background .ins_header-section{
+        width: 100% !important;
+    }
+}
+    

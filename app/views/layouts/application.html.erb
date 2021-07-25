@@ -1,0 +1,627 @@
+<!DOCTYPE html lang="<%= I18n.locale %>">
+<html>
+
+<head>
+    <title>Comil Silos e Secadores - Soluções para armazenagem de grãos</title>
+    <meta charset="iso-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="turbolinks-visit-control" content="reload">
+    <meta content="width=device-width, initial-scale=1.0, maximum scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport" />
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/institucional/favicon.ico" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://use.typekit.net/mlx4unu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+
+
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="block-mobile-menu">
+        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+        
+        <ul class="sidenav" id="slide-out" >
+            <li class="sidenav-header-bar">
+                <img height="36" alt="Comil Silos e Secadores 2021" title="Comil Silos e Secadores 2021" src="/assets/images/institucional/logo-comil.png">
+                <a class="sidenav-close" href="#!">
+                <span class="iconify" data-icon="line-md:chevron-small-left" data-inline="false"></span>
+                </a>
+            </li>
+           
+           
+            
+           <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header" id="1"><%= translate 'menu.itens.menu_company' %><i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                    <ul>
+                        <li><a href="/institucional/sobre"><%= translate 'menu.itens.company' %></a></li>
+                        <li><a href="/institucional/sobre?#missaovisaovalores"><%= translate 'menu.itens.mission' %></a></li>
+                        <li><a href="/institucional/historia"><%= translate 'menu.itens.history' %></a></li>
+                        <li><a href="/institucional/nossasobras"><%= translate 'menu.itens.ourworks' %></a></li>
+                        <li><a href="http://grupomascarello.com.br/imprensa" target="_blank"><%= translate 'menu.itens.press' %></a></li>
+                        <li><a href="http://grupomascarello.com.br/governanca"><%= translate 'menu.itens.governance' %></a></li>
+                        <li class="divider"></li>
+                        <li><a href="/institucional/financiamento"><%= translate 'menu.itens.financing' %></a></li>
+                        <li><a href="http://portaldecomprasgrupomascarello.com/" target="_blank"><%= translate 'menu.itens.become_supplier' %></a></li>
+                        <li><a href="http://grupomascarello.com.br/trabalhe-conosco" target="_blank"><%= translate 'menu.itens.work_with_us' %></a></li>
+                    </ul>
+                    </div>
+                </li>
+                </ul>
+            </li>
+           
+           
+           
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header" id="ddMenuProducts" href="#" data-target="ddProducts"><i class="material-icons">arrow_drop_down</i><%= translate 'menu.itens.menu_products' %></a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header" id="3"><%= translate 'menu.itens.menu_customer_service' %><i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                    <ul>
+                        <li><a href="/servicosaocliente/areadeatuacao"><%= translate 'menu.itens.cs_customer_service' %></a></li>
+                        <li><a href="/servicosaocliente/assistenciatecnica"><%= translate 'menu.itens.cs_technical_assistance' %></a></li>
+                        <li><a href="/servicosaocliente/pecaseservicos"><%= translate 'menu.itens.cs_parts_and_services' %></a></li>
+                    </ul>
+                    </div>
+                </li>
+                </ul>
+            </li>
+
+
+        
+        </ul>
+    </div>
+
+    <!-- Float menu -->
+    <div class="ma-floating-talkwus ma-opened"><a class="ma-inside-link"><i class="material-icons icon">announcement</i> <span class="label">Fale conosco</span></a>
+        <div class="ma-floating-content">
+            <div class="talk-wus-contents">
+                <div>
+                    <p class="tlabel">Fale com a Comil</p><a class="tphone" href="tel:+554521015000" target="_blank">+55 45&nbsp;<strong>2101-5000</strong></a>
+                </div>
+            </div>
+            <div class="talkw-us-links">
+                <a class="talkw-us-link chat" href="https://wa.me/554521015000" target="_blank"><i class="material-icons icon">chat</i><span class="label">Chat Online</span></a>
+                <a class="talkw-us-link email" href="#"><i class="material-icons icon">email</i><span class="label">E-mail</span></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Modal Fale Conosco -->
+    <div id="fale-conosco" class=" block-proposta-modal ">
+        <div class="container">
+            <div class="modal-content scrollspy">
+                <div class="row">
+                    <div class="col s11">
+                        <h4><%= translate 'staticpages.form.proposta.txt_title_modal' %></h4>
+                    </div>
+                    <div class="col s1">
+                        <h4>
+                            <a href="#!" class="modal-close">
+                                <i class="material-icons" title="<%= translate 'staticpages.form.proposta.txt_link_close' %>">close</i>
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <form name="form_contact_footer" target="#" class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12 valign-wrapper">
+                                <input id="contact_nome" name="contact_nome" placeholder="<%= translate 'staticpages.form.proposta.txt_placeholder_nome' %>" type="text" required class="validate">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s6 valign-wrapper">
+                                <input id="contact_email" name="contact_email" placeholder="<%= translate 'staticpages.form.proposta.txt_placeholder_email' %>" type="text" required class="validate">
+                            </div>
+                            <div class="input-field col s6 valign-wrapper">
+                                <input id="contact_celular" name="contact_celular" placeholder="<%= translate 'staticpages.form.proposta.txt_placeholder_celular' %>" type="tel" required class="validate">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s6 valign-wrapper">
+                                <input id="contact_cidade" name="contact_cidade" placeholder="<%= translate 'staticpages.form.proposta.txt_placeholder_city' %>" type="text" required class="validate">
+                            </div>
+                            <div class="input-field col s6 valign-wrapper">
+                                <input id="contact_uf" name="contact_uf" placeholder="<%= translate 'staticpages.form.proposta.txt_placeholder_state' %>" type="text" required class="validate">
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="input-field col s6 valign-wrapper">
+                                <input id="contact_empresa" name="contact_empresa" placeholder="<%= translate 'staticpages.form.proposta.txt_placeholder_empresa' %>" type="text" class="validate">
+                            </div>
+                            <div class="input-field col s6 valign-wrapper">
+                                <input id="contact_cnpj" name="contact_cnpj" placeholder="<%= translate 'staticpages.form.proposta.txt_placeholder_cnpj' %>" type="text" class="validate">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s12 valign-wrapper">
+                                <input id="contact_area_ocupacao" name="contact_area_ocupacao" placeholder="<%= translate 'staticpages.form.proposta.txt_placeholder_area_atuacao' %>" type="text" class="validate">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="input-field col s12 valign-wrapper">
+                                <textarea id="contact_mensagem" name="contact_mensagem" placeholder="<%= translate 'staticpages.form.proposta.txt_placeholder_mensagem' %>" class="materialize-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+
+
+                            <div class="col s12 center-align">
+                                <button class="waves-effect waves-light btn-large comil-form-button" type="submit"><%= translate 'staticpages.form.proposta.txt_button_send' %></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="ddProductsBaseContainer">
+        <div class="ddProductsContainer">
+
+            <nav class="row">
+                <div class="container">
+                    <div id="ddProductsMenu-filter" class="col s12">
+                        <div class="col s2 center-align"><a href="#all" data-target="all" class="active"><%= translate 'menu.itens.prd_all_products' %></a></div>
+                        <div class="col s2 center-align"><a href="#storage" data-target="storage"><%= translate 'menu.itens.prd_storage' %></a></div>
+                        <div class="col s2 center-align"><a href="#cleaning" data-target="cleaning"><%= translate 'menu.itens.prd_cleaning' %></a></div>
+                        <div class="col s2 center-align"><a href="#drying" data-target="drying"><%= translate 'menu.itens.prd_drying' %></a></div>
+                        <div class="col s2 center-align"><a href="#conveyors" data-target="conveyors"><%= translate 'menu.itens.prd_conveyors' %></a></div>
+                        <div class="col s2 right-align">
+                            <a href="#!" class="modal-close">
+                                <i class="material-icons" title="<%= translate 'staticpages.form.proposta.txt_link_close' %>">close</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="row ddProducts_container">
+                <div class="container">
+                    <div class="col s12 ddProducts_display ">
+                        <div class="row">
+                            <div class="col s3 product-card" data-target="storage">
+                                <a href="/produtos/silosplanos" class="prd-link">
+                                    <div class="row">
+                                        <figure>
+                                            <%= image_tag "/assets/images/institucional/ico_armazenagem_silosplanos.png" , height:'164', alt:  (translate 'menu.products.armazenagem.silos_planos') , title: (translate 'menu.products.armazenagem.silos_planos')  %>
+                                        </figure>
+                                        <div class="col s12 txt-caption"><%= translate 'menu.products.armazenagem.silos_planos' %></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col s3 product-card" data-target="storage">
+                                <a href="/produtos/siloselevados" class="prd-link">
+                                    <div class="row">
+                                        <figure>
+                                            <%= image_tag "/assets/images/institucional/ico_armazenagem_siloselevados.png" , height:'164', alt:  (translate 'menu.products.armazenagem.silos_elevados') , title: (translate 'menu.products.armazenagem.silos_elevados')  %>
+                                        </figure>
+                                        <div class="col s12 txt-caption"><%= translate 'menu.products.armazenagem.silos_elevados' %></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col s3 product-card" data-target="storage">
+                                <a href="/produtos/tulhasgraneleiras" class="prd-link">
+                                    <div class="row">
+                                        <figure>
+                                            <%= image_tag "/assets/images/institucional/ico_armazenagem_tulha.png" , height:'164', alt:  (translate 'menu.products.armazenagem.tulhas_graneleiras') , title: (translate 'menu.products.armazenagem.tulhas_graneleiras')  %>
+                                        </figure>
+                                        <div class="col s12 txt-caption"><%= translate 'menu.products.armazenagem.tulhas_graneleiras' %></div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col s3 product-card" data-target="cleaning">
+                                <a href="/produtos/maquinadelimpeza" class="prd-link">
+                                    <div class="row">
+                                        <figure>
+                                            <%= image_tag "/assets/images/institucional/ico_limpeza.png" , height:'164', alt:  (translate 'menu.products.limpeza.maquina_limpeza') , title: (translate 'menu.products.limpeza.maquina_limpeza')  %>
+                                        </figure>
+                                        <div class="col s12 txt-caption"><%= translate 'menu.products.limpeza.maquina_limpeza' %></div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                            <div class="col s3 product-card" data-target="cleaning">
+                                <a href="/produtos/maquinalimpezarotativa" class="prd-link">
+                                    <div class="row">
+                                        <figure>
+                                            <%= image_tag "/assets/images/institucional/ico_limpeza_rotativa.png" , height:'164', alt:  (translate 'menu.products.limpeza.maquina_limpeza_rotativa') , title: (translate 'menu.products.limpeza.maquina_limpeza_rotativa')  %>
+                                        </figure>
+                                        <div class="col s12 txt-caption"><%= translate 'menu.products.limpeza.maquina_limpeza_rotativa' %></div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                            <div class="col s3 product-card" data-target="drying">
+                                <a href="/produtos/secadorescoluna" class="prd-link">
+                                    <div class="row">
+                                        <figure>
+                                            <%= image_tag "/assets/images/institucional/ico_secadores.png" , height:'164', alt:  (translate 'menu.products.secagem.secadores_coluna') , title: (translate 'menu.products.secagem.secadores_coluna')  %>
+                                        </figure>
+                                        <div class="col s12 txt-caption"><%= translate 'menu.products.secagem.secadores_coluna' %></div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="col s3 product-card" data-target="drying">
+                                <a href="/produtos/fornalha" class="prd-link">
+                                    <div class="row">
+                                        <figure>
+                                            <%= image_tag "/assets/images/institucional/ico_secadores_fornalha.png" , height:'164', alt:  (translate 'menu.products.secagem.fornalha') , title: (translate 'menu.products.secagem.fornalha')  %>
+                                        </figure>
+                                        <div class="col s12 txt-caption"><%= translate 'menu.products.secagem.fornalha' %></div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                            <div class="col s3 product-card" data-target="conveyors">
+                                <a href="/produtos/correiastransportadoras" class="prd-link">
+                                    <div class="row">
+                                        <figure>
+                                            <%= image_tag "/assets/images/institucional/ico_transporte_correia.png" , height:'164', alt:  (translate 'menu.products.transporte.correias_transportadoras') , title: (translate 'menu.products.transporte.correias_transportadoras')  %>
+                                        </figure>
+                                        <div class="col s12 txt-caption"><%= translate 'menu.products.transporte.correias_transportadoras' %></div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="col s3 product-card" data-target="conveyors">
+                                <a href="/produtos/roscatransportadora" class="prd-link">
+                                    <div class="row">
+                                        <figure>
+                                            <%= image_tag "/assets/images/institucional/ico_transporte_rosca.png" , height:'164', alt:  (translate 'menu.products.transporte.rosca_transportadora') , title: (translate 'menu.products.transporte.rosca_transportadora')  %>
+                                        </figure>
+                                        <div class="col s12 txt-caption"><%= translate 'menu.products.transporte.rosca_transportadora' %></div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+
+                            <div class="col s3 product-card" data-target="conveyors">
+                                <a href="/produtos/elevador" class="prd-link">
+                                    <div class="row">
+                                        <figure>
+                                            <%= image_tag "/assets/images/institucional/ico_transporte.png" , height:'164', alt:  (translate 'menu.products.transporte.elevador') , title: (translate 'menu.products.transporte.elevador')  %>
+                                        </figure>
+                                        <div class="col s12 txt-caption"><%= translate 'menu.products.transporte.elevador' %></div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col s3 product-card" data-target="conveyors">
+                                <a href="/produtos/redlerrd" class="prd-link">
+                                    <div class="row">
+                                        <figure>
+                                            <%= image_tag "/assets/images/institucional/ico_transporte_redler.png" , height:'164', alt:  (translate 'menu.products.transporte.redler_rd') , title: (translate 'menu.products.transporte.redler_rd')  %>
+                                        </figure>
+                                        <div class="col s12 txt-caption"><%= translate 'menu.products.transporte.redler_rd' %></div>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <header>
+        <div class="nav-wrapper">
+
+
+            <nav>
+                    
+                <div class="nav-menu">
+
+                    <div class="row row-translate">
+                        <div class="col s12 menu-translate">
+                            <a class='dropdown-trigger btn btn-translate' href='#' data-target='dropdown1'><span class="iconify" data-icon="eva:globe-3-fill" data-inline="false"></span> <%= I18n.locale %> </a>
+                            <ul id='dropdown1' class='dropdown-content m-translate'>
+                                <li><a href="/pt"><span class="iconify" data-icon="emojione:flag-for-brazil" data-inline="false"></span> <%= translate 'menu.languages.lang_pt' %></a></li>
+                                <li class="hide"><a href="/es"><span class="iconify" data-icon="emojione:flag-for-spain" data-inline="false"></span> <%= translate 'menu.languages.lang_es' %></a></li>
+                                <li class="hide"><a href="/en"><span class="iconify" data-icon="emojione:flag-for-united-states" data-inline="false"></span> <%= translate 'menu.languages.lang_en' %></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="nav-wrapper menu-header-container row">
+
+                        <div class="col s2 block-base-logo">
+                            <a href="/" title=><%= image_tag "/assets/images/institucional/logo-comil.png" , height:'54', alt:  (translate 'staticpages.index.title') , title: (translate 'staticpages.index.title')  %></a>
+                        </div>
+                        
+                      
+
+                        <div class="col s7 block-base-menu">
+                            <ul class="hide-on-med-and-down base_menu">
+                                <li><a class="dropdown-trigger" href="#!" data-target="ddAbout"><%= translate 'menu.itens.menu_company' %><span class="iconify" data-icon="line-md:chevron-small-down" data-inline="false"></span></a></li>
+                                <li><a id="ddMenuProducts" href="#" data-target="ddProducts"><%= translate 'menu.itens.menu_products' %><span class="iconify" data-icon="line-md:chevron-small-down" data-inline="false"></span></a></li>
+                                <li><a class="dropdown-trigger" href="#!" data-target="ddClientServices"><%= translate 'menu.itens.menu_customer_service' %><span class="iconify" data-icon="line-md:chevron-small-down" data-inline="false"></span></a></li>
+                            </ul>
+
+                            <ul id="ddAbout" class="dropdown-content dd-top-menu">
+                                <li><a href="/institucional/sobre"><%= translate 'menu.itens.company' %></a></li>
+                                <li><a href="/institucional/sobre?#missaovisaovalores"><%= translate 'menu.itens.mission' %></a></li>
+                                <li><a href="/institucional/historia"><%= translate 'menu.itens.history' %></a></li>
+                                <li><a href="/institucional/nossasobras"><%= translate 'menu.itens.ourworks' %></a></li>
+                                <li><a href="http://grupomascarello.com.br/imprensa" target="_blank"><%= translate 'menu.itens.press' %></a></li>
+                                <li><a href="http://grupomascarello.com.br/governanca"><%= translate 'menu.itens.governance' %></a></li>
+                                <li class="divider"></li>
+                                <li><a href="/institucional/financiamento"><%= translate 'menu.itens.financing' %></a></li>
+                                <li><a href="http://portaldecomprasgrupomascarello.com/" target="_blank"><%= translate 'menu.itens.become_supplier' %></a></li>
+                                <li><a href="http://grupomascarello.com.br/trabalhe-conosco" target="_blank"><%= translate 'menu.itens.work_with_us' %></a></li>
+                            </ul>
+
+
+
+                            <ul id="ddClientServices" class="dropdown-content dd-top-menu">
+                                <li><a href="/servicosaocliente/areadeatuacao"><%= translate 'menu.itens.cs_customer_service' %></a></li>
+                                <li><a href="/servicosaocliente/assistenciatecnica"><%= translate 'menu.itens.cs_technical_assistance' %></a></li>
+                                <li><a href="/servicosaocliente/pecaseservicos"><%= translate 'menu.itens.cs_parts_and_services' %></a></li>
+                            </ul>
+
+
+
+                        </div>
+
+                        <div class="col s3 block-base-fastcontact">
+                            <ul class="hide-on-med-and-down contact-menu">
+                                <li class="talk-us "><a href="#fale-conosco" class="link-proposta-modal"><%= translate 'menu.itens.menu_sales_team' %><span class="iconify" data-icon="line-md:chevron-small-right" data-inline="false"></span></a></li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+
+            </nav>
+
+        </div>
+    </header>
+
+    <%= yield %>
+
+
+    <section class="form-newsletter">
+        
+            
+                <form name="form-newsletter" method="post" action="#">
+                    <div class="col s4 valign-wrapper">
+                        <%= translate 'staticpages.form.newsletter.txt_description_inline' %>
+                    </div>
+                    <div class="input-field col s3 valign-wrapper">
+                        <input id="newsletter_nome" name="newsletter_nome" placeholder="<%= translate 'staticpages.form.newsletter.txt_placeholder_nome' %>" type="text" class="validate">
+                    </div>
+                    <div class="input-field col s3 valign-wrapper">
+                        <input id="newsletter_email" name="newsletter_email" placeholder="<%= translate 'staticpages.form.newsletter.txt_placeholder_email' %>" type="email" class="validate">
+                    </div>
+                    <div class="col s2 valign-wrapper">
+                        <a class="waves-effect waves-light btn-large"><%= translate 'staticpages.form.newsletter.txt_button_send' %></a>
+                    </div>                    
+                </form>
+          
+        
+    </section>
+
+
+
+
+    <section class="footer-form_contact">
+        <div class="row box-form">  
+
+                <div class="column">
+                    <div class="row">                        
+                            <h2><%= translate 'staticpages.form.contact.txt_form_contact_h1' %></h2>                        
+                            <p><%= translate 'staticpages.form.contact.txt_form_contact_description' %></p>                        
+                    </div>
+                </div>
+
+                <div class="column">
+                    <form name="form_contact_footer" method="post" action="#" class="col s12">
+                        <div class="row">
+                            <div class="input-field col s12 valign-wrapper">
+                                <input id="contact_nome" name="contact_nome" placeholder="<%= translate 'staticpages.form.contact.txt_placeholder_nome' %>" type="text" required class="validate">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 valign-wrapper">
+                                <input id="contact_email" name="contact_email" placeholder="<%= translate 'staticpages.form.contact.txt_placeholder_email' %>" type="email" required class="validate">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 valign-wrapper">
+                                <input id="contact_telefone" name="contact_telefone" placeholder="<%= translate 'staticpages.form.contact.txt_placeholder_telefone' %>" type="text" required class="validate">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12 valign-wrapper">
+                                <textarea id="contact_mensagem" name="contact_mensagem" placeholder="<%= translate 'staticpages.form.contact.txt_placeholder_mensagem' %>" class="materialize-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col s12 valign-wrapper">
+                                <button class="waves-effect waves-light btn-large comil-form-button" type="submit"><%= translate 'staticpages.form.contact.txt_button_send' %></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+
+
+        </div>
+    </section>
+
+    <footer class="page-footer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col s1"> &nbsp; </div>
+                <div class="col s2">
+                    <h3><%= translate 'menu.itens.menu_company' %></h3>
+                    <ul class="footer-menu">
+                        <li><a href="/institucional/sobre"><%= translate 'menu.itens.company' %></a></li>
+                        <li><a href="/institucional/sobre#missaovisaovalores"><%= translate 'menu.itens.mission' %></a></li>
+                        <li><a href="/institucional/historia"><%= translate 'menu.itens.history' %></a></li>
+                        <li><a href="/institucional/nossasobras"><%= translate 'menu.itens.ourworks' %></a></li>
+                        <li><a href="http://grupomascarello.com.br/imprensa" target="_blank"><%= translate 'menu.itens.press' %></a></li>
+                        <li><a href="http://grupomascarello.com.br/governanca" target="_blank"><%= translate 'menu.itens.governance' %></a></li>
+                        <li><a href="/institucional/financiamento"><%= translate 'menu.itens.financing' %></a></li>
+                        <li><a href="http://portaldecomprasgrupomascarello.com/" target="_blank"><%= translate 'menu.itens.become_supplier' %></a></li>
+                        <li><a href="http://grupomascarello.com.br/trabalhe-conosco" target="_blank"><%= translate 'menu.itens.work_with_us' %></a></li>
+                    </ul>
+
+                </div>
+                <div class="col s2">
+                    <h3><%= translate 'menu.itens.menu_customer_service' %></h3>
+                    <ul class="footer-menu">
+                        <li><a href="/servicosaocliente/areadeatuacao"><%= translate 'menu.itens.cs_customer_service' %></a></li>
+                        <li><a href="/servicosaocliente/assistenciatecnica"><%= translate 'menu.itens.cs_technical_assistance' %></a></li>
+                        <li><a href="/servicosaocliente/pecaseservicos"><%= translate 'menu.itens.cs_parts_and_services' %></a></li>
+                    </ul>
+
+                </div>
+                <div class="col s4"> &nbsp </div>
+                <div class="col s2">
+                    <h3><%= translate 'menu.itens.menu_attendance' %></h3>
+                    <ul class="footer-menu">
+                        <li><a href="#!"><%= translate 'menu.itens.cs_contact_us' %></a></li>
+                        <li><a href="#!"><%= translate 'menu.itens.cs_ombudsman' %></a></li>
+                    </ul>
+                </div>
+                <div class="col s1"> &nbsp </div>
+            </div>
+
+            <div class="row">
+
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col s8 left-align">
+                        <figure>
+                            <span class="img logo-comil">&nbsp;</span>
+                        </figure>
+                        <br />
+
+                        <figure>
+                            <span class="img logo-grupo">&nbsp;</span>
+                        </figure>
+
+                    </div>
+                    <div class="col s4 right-align">
+                        <br />
+
+                        <b><%= translate 'staticpages.index.txt_followUs' %></b>
+
+                        <figure class="right">
+                            <a href="https://www.youtube.com/user/GrupoMascarello" title="<%= translate 'staticpages.index.txt_social_youtube' %>" target="socialMedia"><span class="img social-youtube left">&nbsp;</span></a>
+                            <a href="https://www.facebook.com/comilsilos" title="<%= translate 'staticpages.index.txt_social_facebook' %>" target="socialMedia"><span class="img social-facebook left">&nbsp;</span></a>
+                            <a href="https://www.instagram.com/comilsilos/" title="<%= translate 'staticpages.index.txt_social_instagram' %>" target="socialMedia"><span class="img social-instagram left">&nbsp;</span></a>
+                        </figure>
+
+
+                        <address class="row address">
+                            <p class="col s12">
+                                <a href="https://goo.gl/maps/AnXQcU5FfSrz1Pqv8" target="_blank" title="<%= translate 'staticpages.index.txt_address_link' %>">
+                                    Av. Aracy Tanaka Biazetto, 16550 <br />
+                                    Santos Dumont <br />
+                                    Cascavel - PR <br />
+                                    Cep: 85804-600 <br /><br />
+                                    +55 45 2101-5000 </a><br />
+
+                            </p>
+                        </address>
+
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col s9 left-align txt-copy">
+                        <%= translate 'staticpages.index.txt_copy' , setYear: Date.today.strftime('%Y')  %>
+                    </div>
+                    <div class="col s3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+<script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/56430c43-d988-404a-845f-2c11d9262577-loader.js"></script>
+<script type="text/javascript">$(document).ready(function(){$("form").bind('submit',function(){alert("Obrigado! Em breve entraremos em contato.");});});</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-39462159-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-39462159-1');
+</script>
+
+
+</body>
+
+</html>

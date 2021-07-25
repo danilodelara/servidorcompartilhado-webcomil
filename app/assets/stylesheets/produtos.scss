@@ -1,0 +1,459 @@
+// Place all the styles related to the institucional controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.ins_body-content-produtos{
+    background-color: #fff ;
+    position: relative;
+}
+
+.ins_header_background {
+    background-color: #850000 ;
+    min-height: 300px;
+    background: url(/assets/images/institucional/bg_about.jpg) no-repeat ;
+    background-size: cover;
+    background-position: 20% ;
+    position: relative;
+}
+
+.ins_setbg_header
+{
+     background-position: center;
+    background-size: cover;
+}
+
+.ins_setbg_header .row{ 
+    display: block;
+}
+
+
+.ins_header_background .ins_header-section{
+    background-color: #850000 ; 
+    position: absolute;
+    margin-left: 2%;
+    bottom: -10%;
+}
+
+@media (max-width: 769px){
+    .ins_header_background .ins_header-section{
+        width: 100% !important;
+    }
+}
+
+
+.ins_header_background .ins_header-section h1{ 
+    color: #fff;
+    text-align: center;
+    font-size: 38px;
+    line-height: 124px;
+    padding-top: 4px;
+    margin: 2%;
+}
+
+ .ins_page-blocks{
+    background-color: #f9f9f9 ; 
+    min-height: 421px;
+    height: fit-content;
+    display: flex;
+}
+
+.ins_page-blocks .row{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    margin: 0;
+}
+
+.ins_page-blocks .row > .s6{
+    display: flex;
+    flex: 1 1 330px;
+    justify-content: space-around;
+    flex-shrink: 2;
+}
+
+ 
+ .ins_block-produto .description{
+     height: 100%;
+     padding: 10% 5% !important;   
+ }
+
+ .ins_block-produto .ilustration{
+    height: 420px;
+    background-size: cover;
+    background-position: center !important;
+    background-color: hsl(0, 0%, 0%);
+}
+
+@media (max-width: 720px){
+.ins_block-produto .row-mobile {  flex-direction: row-reverse;     flex-flow: wrap-reverse;  }
+.ins_block-produto .row-mobile .s6 .s4{ display: none !important;}
+.ins_block-produto .row-mobile .s6 .s8{ width: 98% !important;}
+}
+
+
+ 
+ .ins_block-valores .description{
+    padding: 2% 5% !important;   
+ }
+
+
+ .especification-block{
+     flex-flow: column wrap !important;
+ }
+
+
+ .especification-table {
+    margin: 2% 4%;
+    background-color: #f2f2f2;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    flex-shrink: 2;
+    padding: 2%;
+ }
+
+.action-row-box {
+    justify-content: space-around;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+ .action-link {
+    display: block;
+    width: 300px;
+    height: 48px;
+    border-radius: 36px;
+    border: #ffa700 2px solid;
+    font-size: 1.0em;
+    color: #ffa700;
+    font-weight: 100;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin:  2% auto;
+ }
+.action-link:hover{
+     text-decoration: underline;
+ }
+
+
+ 
+/* SILO PLANO */
+
+.prd-armazenagem-siloplano{
+
+     .ins_setbg_header
+    {
+        background: url(/assets/images/produtos/siloplano/bg_silosplanos.jpg) no-repeat ;      
+    }
+
+    .teto .ilustration{
+        background: url(/assets/images/produtos/siloplano/_teto.jpg) no-repeat ;        
+    }
+
+    .corpo .ilustration{
+        background: url(/assets/images/produtos/siloplano/_corpomontante.jpg) no-repeat ;        
+    }
+
+    .respiros .ilustration{
+        background: url(/assets/images/produtos/siloplano/_respiros.jpg) no-repeat ;
+    }
+
+    .portas .ilustration{
+        background: url(/assets/images/produtos/siloplano/_portas.jpg) no-repeat ;
+    }
+
+    .escadas .ilustration{
+        background: url(/assets/images/produtos/siloplano/_escadas.jpg) no-repeat ;
+    }
+
+    .aeracao .ilustration{
+        background: url(/assets/images/produtos/siloplano/_aeracao.jpg) no-repeat ;
+    }
+
+    .termometria .ilustration{
+        background: url(/assets/images/produtos/siloplano/_termometria.jpg) no-repeat ;
+    }
+    .rosca .ilustration{
+        background: url(/assets/images/produtos/siloplano/_rosca.jpg) no-repeat ;
+    }
+    
+    .passarela .ilustration{
+        background: url(/assets/images/produtos/siloplano/_passarela.jpg) no-repeat ;
+    }
+
+}
+
+/* SILO ELEVADO */
+.prd-armazenagem-siloelevado {
+
+    .ins_setbg_header{
+        background: url(/assets/images/produtos/siloelevado/bg_siloselevado.jpg) no-repeat ; 
+        background-position: right center;       
+    }
+
+    .teto .ilustration{
+        background: url(/assets/images/produtos/siloplano/_teto.jpg) no-repeat ;        
+    }
+
+    .corpo .ilustration{
+        background: url(/assets/images/produtos/siloplano/_corpomontante.jpg) no-repeat ;       
+    }
+
+    .estrutura .ilustration{
+        background: url(/assets/images/produtos/siloelevado/_estrutura.jpg) no-repeat ;
+    }
+
+    .respiros .ilustration{
+        background: url(/assets/images/produtos/siloplano/_respiros.jpg) no-repeat ;
+    }
+
+    .portas .ilustration{
+        background: url(/assets/images/produtos/siloplano/_portas.jpg) no-repeat ;
+    }
+
+    .escadas .ilustration{
+        background: url(/assets/images/produtos/siloplano/_corpomontante.jpg) no-repeat ;
+    }
+
+    .aeracao .ilustration{
+        background: url(/assets/images/produtos/siloplano/_aeracao.jpg) no-repeat ;
+    }
+
+    .termometria .ilustration{
+        background: url(/assets/images/produtos/siloplano/_termometria.jpg) no-repeat ;
+    }   
+    
+    .passarela .ilustration{
+        background: url(/assets/images/produtos/siloelevado/_passarelase.jpg) no-repeat ;
+    }
+
+}
+
+
+
+ /* TULHAS */
+ .prd-armazenagem-tulha{ 
+    .ins_setbg_header{
+        background: url(/assets/images/produtos/tulhas/bg_tulhagraneleira.jpg) no-repeat ;
+        background-position: right center;
+        background-size: cover;
+    }
+
+    .carga .ilustration{
+        background: url(/assets/images/produtos/tulhas/carga.jpg) no-repeat ;
+    }
+
+    .escadas .ilustration{
+        background: url(/assets/images/produtos/tulhas/escadas.jpg) no-repeat ;
+    }
+
+    .registro .ilustration{
+        background: url(/assets/images/produtos/tulhas/registro.jpg) no-repeat ;
+    }
+
+    .estrutura .ilustration{
+        background: url(/assets/images/produtos/tulhas/estrutura.jpg) no-repeat ;
+    }
+
+    .cobertura .ilustration{
+        background: url(/assets/images/produtos/tulhas/carga.jpg) no-repeat ;
+    }
+
+}
+
+
+ /* MAQUINA DE LIMPEZA */
+ .prd-limpeza-maquina{ 
+    .ins_setbg_header{
+        background: url(/assets/images/produtos/maquinalimpeza/header-ml.jpg) no-repeat;
+        background-position: right center;
+        background-size: cover;
+    }
+    .peneiras .ilustration{
+        background: url(/assets/images/produtos/maquinalimpeza/peneira.jpg) no-repeat;
+    }
+    .aspiracao .ilustration{
+        background: url(/assets/images/produtos/maquinalimpeza/aspiracao.jpg) no-repeat;
+    }
+    .escadas .ilustration{
+        background: url(/assets/images/produtos/maquinalimpeza/maquina.jpg) no-repeat;
+    } 
+    .exaustor .ilustration{
+        background: url(/assets/images/produtos/maquinalimpeza/exaustor.jpg) no-repeat;
+    }
+    .distribuidores .ilustration{
+        background: url(/assets/images/produtos/maquinalimpeza/distribuidores.jpg) no-repeat;
+    }
+    .bicas .ilustration{
+        background: url(/assets/images/produtos/maquinalimpeza/bicas.jpg) no-repeat;
+    }
+
+}
+
+
+.prd-limpeza-maquina-rotativa{ 
+    .ins_setbg_header{
+        background: url(/assets/images/produtos/maquinalimprotativa/header.jpg) no-repeat;
+        background-position: right center;
+        background-size: cover;
+    }
+    .maquina .ilustration{
+        background: url(/assets/images/produtos/maquinalimprotativa/maquinarotativa.jpg) no-repeat;
+    }
+   
+
+}
+
+
+
+
+ /* SECADOR DE COLUNA */
+
+ .prd-secagem-coluna{ 
+    .ins_setbg_header{
+        background: url(/assets/images/produtos/secadorcoluna/bg_secador.jpg) no-repeat ;
+        background-position: right center;
+        background-size: cover;
+    }
+
+
+    .funil .ilustration{ background: url(/assets/images/produtos/secadorcoluna/sec-mod001.jpg) no-repeat;}
+    .ventiladores .ilustration{ background: url(/assets/images/produtos/secadorcoluna/sec_ventilador.jpg) no-repeat;}
+    .torre .ilustration{ background: url(/assets/images/produtos/secadorcoluna/sec-mod003.jpg) no-repeat;}
+    .escadas .ilustration{ background: url(/assets/images/produtos/secadorcoluna/sec-mod005.jpg) no-repeat;}
+    .fornalha .ilustration{ background: url(/assets/images/produtos/secadorcoluna/sec-mod004.jpg) no-repeat;}
+    .descarga .ilustration{ background: url(/assets/images/produtos/secadorcoluna/sec-mod006.jpg) no-repeat;}
+    
+}
+/* SECADOR FORNALHA */
+
+.prd-secagem-fornalha{ 
+    .ins_setbg_header{
+        background: url(/assets/images/produtos/fornalha/bg_secador.jpg) no-repeat ;
+        background-position: right center;
+        background-size: cover;
+    }
+
+
+    .camara .ilustration{ background: url(/assets/images/produtos/fornalha/sec-mod004.jpg) no-repeat;}
+    .mistura .ilustration{ background: url(/assets/images/produtos/fornalha/sec-mod001.jpg) no-repeat;}
+    .bloqueio .ilustration{ background: url(/assets/images/produtos/fornalha/sec-mod004.jpg) no-repeat;}
+    .alimentacao .ilustration{ background: url(/assets/images/produtos/fornalha/sec-mod001.jpg) no-repeat;}
+    .acesso .ilustration{ background: url(/assets/images/produtos/fornalha/sec-mod004.jpg) no-repeat;}
+    .descarga .ilustration{ background: url(/assets/images/produtos/fornalha/sec-mod001.jpg) no-repeat;}
+    
+}
+
+
+
+ /* CORREIA TRANSPORTADORA */
+
+ .prd-correia-transportadora{ 
+    .ins_setbg_header{
+        background: url(/assets/images/produtos/transporte_correias/header.jpg) no-repeat ;
+        background-position: right center;
+        background-size: cover;
+    }
+
+    .cobertura .ilustration { 
+        background: url(/assets/images/produtos/transporte_correias/cobertura.jpg) no-repeat;
+    }
+    .aparador .ilustration { 
+        background: url(/assets/images/produtos/transporte_correias/correia.jpg) no-repeat;
+    }
+    .rolo .ilustration { 
+        background: url(/assets/images/produtos/transporte_correias/rolo.jpg) no-repeat;
+    }
+    .corpo .ilustration { 
+        background: url(/assets/images/produtos/transporte_correias/roletes.jpg) no-repeat;
+    }
+}
+
+
+
+ /* ROSCA TRANSPORTADORA */
+
+ .prd-rosca-transportadora{ 
+    .ins_setbg_header{
+        background: url(/assets/images/produtos/transporte_rosca/header.jpg) no-repeat ;
+        background-position: right center;
+        background-size: cover;
+    }
+
+    .helicoide .ilustration { 
+        background: url(/assets/images/produtos/transporte_rosca/_helicoide.jpg) no-repeat;
+    }
+
+
+    .durabilidade .ilustration { 
+        background: url(/assets/images/produtos/transporte_rosca/_rosca.jpg) no-repeat;
+    }
+    
+    .tampa .ilustration { 
+        background: url(/assets/images/produtos/transporte_redler/tampa.jpg) no-repeat;
+    }
+    
+}
+
+
+
+ /* ELEVADORES */
+
+ .prd-transporte-elevador{ 
+    .ins_setbg_header{
+        background: url(/assets/images/produtos/transporte_elevador/header.jpg) no-repeat ;
+        background-position: right center;
+        background-size: cover;
+    }
+
+
+    .seguranca .ilustration { 
+        background: url(/assets/images/produtos/transporte_elevador/seguranca.jpg) no-repeat;
+    }
+
+    .rolo .ilustration { 
+        background: url(/assets/images/produtos/transporte_elevador/rolo.jpg) no-repeat;
+    }
+    .inspecao .ilustration { 
+        background: url(/assets/images/produtos/transporte_elevador/inspecao.jpg) no-repeat;
+    }
+    .calha .ilustration { 
+        background: url(/assets/images/produtos/transporte_elevador/calha.jpg) no-repeat;
+    }
+    .cabeca .ilustration { 
+        background: url(/assets/images/produtos/transporte_elevador/cabeca.jpg) no-repeat;
+    }
+    
+    
+}
+
+
+
+
+ /* REDLER */
+
+ .prd-transporte-redler{ 
+    .ins_setbg_header{
+        background: url(/assets/images/produtos/transporte_redler/header.jpg) no-repeat ;
+        background-position: right center;
+        background-size: cover;
+    }
+
+    .corrente .ilustration { 
+        background: url(/assets/images/produtos/transporte_redler/corrente.jpg) no-repeat;
+    }
+    
+    .acionamento .ilustration { 
+        background: url(/assets/images/produtos/transporte_redler/acionamento.jpg) no-repeat;
+    }
+    
+    .rolamento .ilustration { 
+        background: url(/assets/images/produtos/transporte_redler/rolamentos.jpg) no-repeat;
+    }
+
+    .tampa .ilustration { 
+        background: url(/assets/images/produtos/transporte_redler/tampa.jpg) no-repeat;
+    }
+    
+}
+
